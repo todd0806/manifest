@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- remote: name 名稱，fetch 遠程地址。可以有多個remote，通過project.remote可指定不同的remote -->
+  <remote name="origin"
+          fetch="https://github.com/todd0806/"
+          review="https://github.com/todd0806/" />
+  <!-- default: revision 指定分支，remote 指定remote name，sync-j 同步執行緒數 -->
+  <default revision="master"
+           remote="origin"
+           sync-j="4" />
+  <!-- project：path 本地相對路徑，name 遠端相對路徑，完整路徑為 remote.fetch + project.name -->
+  <project path="test1" name="test1" />
+  <project path="test2" name="test2" />
+  <project path="test3" name="test3" />
+
+  <!--
+    Merge marker to make it easier for git to merge AOSP-only manifest
+    changes to a custom manifest.  Please keep this marker here and
+    refrain from making changes on or below it.
+  -->
+</manifest>
