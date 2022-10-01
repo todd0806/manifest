@@ -6,7 +6,7 @@
           fetch="https://github.com/todd0806/"
           review="https://github.com/todd0806/" />
   <!-- default: revision 指定分支，remote 指定remote name，sync-j 同步執行緒數 -->
-  <default revision="master"
+  <default revision="main"
            remote="origin"
            sync-j="4" />
   <!-- project：path 本地相對路徑，name 遠端相對路徑，完整路徑為 remote.fetch + project.name -->
